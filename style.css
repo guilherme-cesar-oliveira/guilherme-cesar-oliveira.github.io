@@ -205,10 +205,9 @@ section { margin-top: 30px; }
 .job:last-child { margin-bottom: 0; }
 
 .job-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
   gap: 4px 14px;
 }
 .job-role { font-weight: 700; font-size: 15px; color: var(--ink); }
@@ -228,10 +227,9 @@ ul.bullets li strong { color: var(--ink); }
   padding: 18px 20px;
 }
 .project-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
   gap: 4px 14px;
   margin-bottom: 2px;
 }
@@ -270,7 +268,7 @@ ul.bullets li strong { color: var(--ink); }
   .header { flex-direction: column; text-align: center; padding: 26px 20px; }
   .contact-row { justify-content: center; }
   .skills-grid, .mini-grid { grid-template-columns: 1fr; }
-  .job-head, .project-head { flex-direction: column; gap: 2px; }
+  .job-head, .project-head { grid-template-columns: 1fr; gap: 2px; }
 }
 
 /* ---------- Print ---------- */
